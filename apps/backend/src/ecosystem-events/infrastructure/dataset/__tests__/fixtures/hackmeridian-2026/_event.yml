@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../schema-event.yml
+slug: hackmeridian-2026
+name: HackMeridian 2026
+network: testnet
+starts_at: '2026-10-25T09:00:00Z'
+ends_at: '2026-10-26T12:00:00Z'
+source_url: https://github.com/devodii/hackproof

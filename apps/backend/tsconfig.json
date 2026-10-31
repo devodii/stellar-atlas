@@ -14,6 +14,8 @@
 			"@core/*": ["./src/core/*"],
 			"@cross-check/*.js": ["./src/cross-check/*.ts"],
 			"@cross-check/*": ["./src/cross-check/*"],
+			"@ecosystem-events/*.js": ["./src/ecosystem-events/*.ts"],
+			"@ecosystem-events/*": ["./src/ecosystem-events/*"],
 			"@fbas/*.js": ["./src/fbas/*.ts"],
 			"@fbas/*": ["./src/fbas/*"],
 			"@history-scan-coordinator/*.js": ["./src/history-scan-coordinator/*.ts"],

@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=../schema-hackathon-project.yml
+event: hackmeridian-2026
+canonical_id: pkg:github/WebSoroban/payloop
+repo_url: https://github.com/WebSoroban/payloop
+name: payloop
+description:
+  'Non-custodial USDC subscriptions on Stellar: the Soroban contract, the
+  @web-soroban/payloop SDK, and a merchant example.'
+homepage: https://payloop.websoroban.in
+language: Rust
+license: MIT
+topics:
+  - soroban
+  - stellar
+  - subscriptions
+  - usdc
+created_at: '2026-10-25T16:39:51Z'
+owner: WebSoroban
+track: genesis
+track_declared: false
+evidence_tier: likely
+commits_in_window: 26
+stack:
+  soroban-sdk: 29.0.0
+  '@stellar/stellar-sdk': ^14.6.1
+chain:
+  contracts: 0
+  wasm_uploads: 0
+  classic_ops: 0
+  assets: 0
+  failed_txs: 0
+  accounts: []
+  evidence: []
+contributors:
+  - login: Aaditib12
+    contributions: 23
+  - login: harshdev2909
+    contributions: 2
+  - login: akashpanda122
+    contributions: 1

@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=../schema-hackathon-project.yml
+event: hackmeridian-2026
+canonical_id: pkg:github/ethan-r13n/nest
+repo_url: https://github.com/ethan-r13n/nest
+name: nest
+description:
+  Nest — discovery, research, and wallet-approved execution across Stellar DeFi.
+language: TypeScript
+created_at: '2026-10-25T22:49:21Z'
+owner: ethan-r13n
+track: genesis
+track_declared: false
+award: first
+evidence_tier: verified
+commits_in_window: 89
+stack:
+  '@stellar/stellar-sdk': 'catalog:'
+  '@creit.tech/stellar-wallets-kit': 'catalog:'
+integrations:
+  - slug: stellar-wallets-kit
+    name: Stellar Wallets Kit
+    evidence:
+      - method: package
+        detail: '@creit.tech/stellar-wallets-kit'
+        file_url: https://github.com/ethan-r13n/nest/blob/HEAD/apps/web/package.json
+  - slug: soroswap
+    name: Soroswap
+    evidence:
+      - method: endpoint
+        detail: api.soroswap.finance
+        file_url: https://github.com/ethan-r13n/nest/blob/HEAD/packages/adapters/test/soroswap-client.test.ts
+  - slug: defindex
+    name: DeFindex
+    evidence:
+      - method: endpoint
+        detail: api.defindex.io
+        file_url: https://github.com/ethan-r13n/nest/blob/HEAD/packages/adapters/test/defindex.test.ts
+  - slug: blend
+    name: Blend
+    evidence:
+      - method: package
+        detail: '@blend-capital/blend-sdk'
+        file_url: https://github.com/ethan-r13n/nest/blob/HEAD/packages/adapters/package.json
+chain:
+  contracts: 0
+  wasm_uploads: 0
+  classic_ops: 1
+  assets: 0
+  failed_txs: 0
+  accounts:
+    - GBKUH6MHQKKMA3T3DA2PGV67YYM3E3Z7TMMPBZ6QO755EDTSKNREMSFQ
+  evidence:
+    - kind: account
+      subject: GBKUH6MHQKKMA3T3DA2PGV67YYM3E3Z7TMMPBZ6QO755EDTSKNREMSFQ
+      method: deployer_in_repo
+      explorer_url: https://stellar.expert/explorer/testnet/account/GBKUH6MHQKKMA3T3DA2PGV67YYM3E3Z7TMMPBZ6QO755EDTSKNREMSFQ
+      file_url: https://github.com/ethan-r13n/nest/blob/HEAD/packages/adapters/test/xoxno.test.ts
+contributors:
+  - login: ethan-r13n
+    contributions: 89

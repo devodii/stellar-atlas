@@ -84,7 +84,8 @@
 		"typeorm": "0.3.31",
 		"validator": "^13.15.35",
 		"winston": "^3.19.0",
-		"ws": "^8.21.0"
+		"ws": "^8.21.0",
+		"yaml": "^2.9.0"
 	},
 	"devDependencies": {
 		"@types/async": "^3.2.25",

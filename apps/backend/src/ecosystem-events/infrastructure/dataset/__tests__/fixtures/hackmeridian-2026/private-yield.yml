@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema-hackathon-project.yml
+event: hackmeridian-2026
+canonical_id: pkg:github/troqpay/private-yield
+repo_url: https://github.com/troqpay/private-yield
+name: private-yield
+description:
+  'Private B2B payments on Stellar that keep earning yield: Stellar Private
+  Payments over DeFindex vault shares (HackMeridian 2026, testnet)'
+language: TypeScript
+license: Apache-2.0
+created_at: '2026-10-25T14:08:08Z'
+owner: troqpay
+track: scale
+track_declared: true
+award: runner-up
+evidence_tier: verified
+commits_in_window: 12
+stack:
+  '@stellar/stellar-sdk': 14.6.1
+  '@stellar/freighter-api': 6.0.1
+integrations:
+  - slug: freighter
+    name: Freighter
+    evidence:
+      - method: package
+        detail: '@stellar/freighter-api'
+        file_url: https://github.com/troqpay/private-yield/blob/HEAD/package.json
+chain:
+  contracts: 12
+  wasm_uploads: 0
+  classic_ops: 0
+  assets: 0
+  failed_txs: 0
+  accounts:
+    - GDB3EADRIUACSOZF655YNSYDPTCG7DD5RKT7CXWSBFMQOBTUGAFV6LYW
+  evidence:
+    - kind: contract
+      subject: CABZFHJSCXVOVOEJGUHT6XX52AEAZOTDTYSEMBIJIQSYXO3YRJU3ONKG
+      method: contract_in_repo
+      explorer_url: https://stellar.expert/explorer/testnet/contract/CABZFHJSCXVOVOEJGUHT6XX52AEAZOTDTYSEMBIJIQSYXO3YRJU3ONKG
+      file_url: https://github.com/troqpay/private-yield/blob/HEAD/src/config/demo-testnet-deployments.json
+    - kind: contract
+      subject: CAE6HNKLDQ6VON5TCMCXZ52CPFAZ6NPOZCOMUXRAG2LFNLL6LOIWGTDI
+      method: contract_in_repo
+      explorer_url: https://stellar.expert/explorer/testnet/contract/CAE6HNKLDQ6VON5TCMCXZ52CPFAZ6NPOZCOMUXRAG2LFNLL6LOIWGTDI
+      file_url: https://github.com/troqpay/private-yield/blob/HEAD/src/config/demo-testnet-deployments.json
+    - kind: contract
+      subject: CAMO33KOE6GHNHJMCPQWPBZTHCACLX6M7X6USNXCRXRTSOZMD4ZDNFLI
+      method: contract_in_repo
+      explorer_url: https://stellar.expert/explorer/testnet/contract/CAMO33KOE6GHNHJMCPQWPBZTHCACLX6M7X6USNXCRXRTSOZMD4ZDNFLI
+      file_url: https://github.com/troqpay/private-yield/blob/HEAD/src/config/demo-testnet-deployments.json
+    - kind: contract
+      subject: CB5LRBHZVPM3XMUUVTVDRPGVRGHDKVWBEZEKIP4FZETJRS6O2TMHYOIQ
+      method: contract_in_repo
+      explorer_url: https://stellar.expert/explorer/testnet/contract/CB5LRBHZVPM3XMUUVTVDRPGVRGHDKVWBEZEKIP4FZETJRS6O2TMHYOIQ
+      file_url: https://github.com/troqpay/private-yield/blob/HEAD/src/config/demo-testnet-deployments.json
+    - kind: contract
+      subject: CBKAD242VE3TRF7URVNAMWNS36JGZVVHSMGHB2JPU3IM5SQXOIDFVH6G
+      method: contract_in_repo
+      explorer_url: https://stellar.expert/explorer/testnet/contract/CBKAD242VE3TRF7URVNAMWNS36JGZVVHSMGHB2JPU3IM5SQXOIDFVH6G
+      file_url: https://github.com/troqpay/private-yield/blob/HEAD/src/config/demo-testnet-deployments.json
+    - kind: contract
+      subject: CBPWSNW3UM4VYIDNW3MBZYRXI2NNNUPV2HEQHA5DKUN2AEFFVVBLROIR
+      method: contract_in_repo
+      explorer_url: https://stellar.expert/explorer/testnet/contract/CBPWSNW3UM4VYIDNW3MBZYRXI2NNNUPV2HEQHA5DKUN2AEFFVVBLROIR
+      file_url: https://github.com/troqpay/private-yield/blob/HEAD/src/config/demo-testnet-deployments.json
+    - kind: contract
+      subject: CDYDMR6FKNNP7VZIPK2RVAZDL337SI7C2YXOVD4K4KBZHBJEMIO6ZH73
+      method: contract_in_repo
+      explorer_url: https://stellar.expert/explorer/testnet/contract/CDYDMR6FKNNP7VZIPK2RVAZDL337SI7C2YXOVD4K4KBZHBJEMIO6ZH73
+      file_url: https://github.com/troqpay/private-yield/blob/HEAD/src/config/demo-testnet-deployments.json
+    - kind: account
+      subject: GDB3EADRIUACSOZF655YNSYDPTCG7DD5RKT7CXWSBFMQOBTUGAFV6LYW
+      method: deployer_in_repo
+      explorer_url: https://stellar.expert/explorer/testnet/account/GDB3EADRIUACSOZF655YNSYDPTCG7DD5RKT7CXWSBFMQOBTUGAFV6LYW
+      file_url: https://github.com/troqpay/private-yield/blob/HEAD/src/config/demo-testnet-deployments.json
+contributors:
+  - login: ovitorpio
+    contributions: 12

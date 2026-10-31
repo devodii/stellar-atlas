@@ -50,6 +50,7 @@ const directorySourceAliases = aliasPattern([
 	'cross-check',
 	'domain',
 	'dto',
+	'ecosystem-events',
 	'env',
 	'examples',
 	'fbas',
