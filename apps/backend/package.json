@@ -32,6 +32,7 @@
 		"run-history-archive-broker-dispatcher": "node lib/history-scan-coordinator/infrastructure/cli/archive-broker/run-history-archive-broker-dispatcher.js",
 		"seed-history-archive-proof-refreshes": "node lib/history-scan-coordinator/infrastructure/cli/archive-proof-refresh-seed/seed-history-archive-checkpoint-proof-refreshes.js",
 		"backfill-history-archive-shared-checkpoints": "node lib/history-scan-coordinator/infrastructure/cli/archive-shared-checkpoint-backfill/run-history-archive-shared-checkpoint-backfill.js",
+		"import-ecosystem-event": "node lib/ecosystem-events/infrastructure/cli/import-ecosystem-event.js",
 		"retrieve-home-domain": "node lib/network-scan/infrastructure/cli/retrieve-home-domain.js"
 	},
 	"author": "pieterjan84@github",

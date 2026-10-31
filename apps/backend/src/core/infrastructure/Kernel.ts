@@ -7,6 +7,7 @@ import { load as loadNetworkScan } from '../../network-scan/infrastructure/di/co
 import { load as loadNetworkEventNotifications } from '../../notifications/infrastructure/di/container.js';
 import { load as loadStatus } from '../../status/infrastructure/di/container.js';
 import { load as loadCrossCheck } from '../../cross-check/infrastructure/di/container.js';
+import { load as loadEcosystemEvents } from '../../ecosystem-events/infrastructure/di/container.js';
 import { load as loadFbas } from '../../fbas/infrastructure/di/container.js';
 import { load as loadCore } from '../infrastructure/di/container.js';
 import { AppDataSource } from './database/AppDataSource.js';
@@ -61,6 +62,7 @@ export default class Kernel {
 		loadHistory(this.container, config);
 		loadStatus(this.container, config);
 		loadCrossCheck(this.container);
+		loadEcosystemEvents(this.container);
 		loadFbas(this.container);
 	}
 
