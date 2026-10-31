@@ -8,6 +8,7 @@ import {
 	type EntityRecord
 } from '../../api/explorer-analytics';
 import { LocalDateTime } from '../local-date-time';
+import { ExplorerRepositoryEvents } from './explorer-repository-events';
 import styles from './explorer-contract-provenance.module.css';
 
 const labels: Record<string, string> = {
@@ -160,6 +161,7 @@ export function ExplorerContractProvenance({
 							audit.
 						</p>
 					)}
+					{repository && <ExplorerRepositoryEvents repository={repository} />}
 				</>
 			) : attempt > 0 ? (
 				<p className={styles.muted}>

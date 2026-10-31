@@ -1,0 +1,36 @@
+.events {
+	margin-top: 0.85rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid var(--border-color, #344047);
+}
+.events h3 {
+	margin: 0 0 0.5rem;
+	font-size: 0.9rem;
+}
+.events ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 0.4rem;
+}
+.events li {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem 0.6rem;
+}
+.chip,
+.award {
+	font-size: 0.75rem;
+	border: 1px solid var(--border-color, #344047);
+	border-radius: 999px;
+	padding: 0.1rem 0.5rem;
+}
+.award {
+	border-color: var(--color-primary, #85b9b3);
+}
+.muted {
+	font-size: 0.8rem;
+	opacity: 0.75;
+}
