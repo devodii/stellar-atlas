@@ -8,6 +8,8 @@ Vue frontend and the Next.js frontend.
 ## Code Map
 
 - `src/core` provides config, DI, HTTP shell, logging, database, and utilities.
+- `src/ecosystem-events` stores imported event datasets, such as hackathon
+  participation, and serves them through the public API.
 - `src/network-scan` builds validator, organization, network, measurement, TOML,
   quorum, search, and SCP observation state.
 - `src/history-scan-coordinator` schedules archive scanner workers and stores

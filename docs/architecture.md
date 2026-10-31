@@ -137,6 +137,21 @@ archive-integrity mismatches are separate evidence classes. Only the last class
 proves that fetched archive content disagrees with its expected hash or related
 checkpoint data.
 
+### Ecosystem Events
+
+```text
+event dataset directory (manifest plus one file per project)
+  -> import-ecosystem-event CLI (validate, then replace in one transaction)
+  -> Postgres ecosystem_events and ecosystem_event_projects
+  -> public API /v1/ecosystem-events and repository lookup
+  -> frontend contract build provenance
+```
+
+Datasets describe events such as hackathons, and an event can run on another
+network than the one StellarAtlas monitors. They are therefore a separate read
+model keyed by GitHub repository and are never joined to the chain tables. See
+`docs/ops/ecosystem-events.md`.
+
 ### Full-History ETL
 
 ```text

@@ -40,6 +40,8 @@ Read the nearest folder guide before editing:
 - `apps/frontend-v4/AGENTS.md` - production Next.js frontend.
 - `apps/backend/AGENTS.md` - backend app shell, API, workers, DI, persistence.
 - `apps/backend/src/core/AGENTS.md` - shared backend core, config, HTTP, CLI.
+- `apps/backend/src/ecosystem-events/AGENTS.md` - imported event datasets such as
+  hackathons, their import CLI and public API.
 - `apps/backend/src/history-scan-coordinator/AGENTS.md` - archive job API and scheduler.
 - `apps/backend/src/network-scan/AGENTS.md` - network crawler snapshots, TOML, SCP data.
 - `apps/backend/src/notifications/AGENTS.md` - subscriptions and notification delivery.
