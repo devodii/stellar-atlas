@@ -48,6 +48,10 @@ import {
 	contractProvenancePaths,
 	contractProvenanceSchemas
 } from './ContractProvenanceOpenApi.js';
+import {
+	ecosystemEventsPaths,
+	ecosystemEventsSchemas
+} from './EcosystemEventsOpenApi.js';
 
 const analyticsTag = ['Analytics'];
 const publicAccess: readonly OpenApiRecord[] = [];
@@ -433,6 +437,7 @@ export function withHubbleOpenApiPaths(document: unknown): OpenApiRecord {
 	const existingSchemas = readOpenApiRecord(components.schemas) ?? {};
 	const schemas = {
 		...contractProvenanceSchemas,
+		...ecosystemEventsSchemas,
 		...hubbleAssetReportSchemas,
 		...hubbleAccountBalanceSchemas,
 		...hubbleContractEventSchemas,
@@ -455,7 +460,8 @@ export function withHubbleOpenApiPaths(document: unknown): OpenApiRecord {
 			...paths,
 			...hubblePaths,
 			...datasetResourceOpenApiPaths(hubblePaths, columnSchema),
-			...contractProvenancePaths
+			...contractProvenancePaths,
+			...ecosystemEventsPaths
 		}
 	};
 }

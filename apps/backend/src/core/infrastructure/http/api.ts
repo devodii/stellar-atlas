@@ -102,6 +102,15 @@ import { GetCrossCheckValidators } from '@cross-check/use-cases/get-cross-check-
 import { GetRadarNetworkComparisonSnapshot } from '@cross-check/use-cases/get-radar-network-comparison-snapshot/GetRadarNetworkComparisonSnapshot.js';
 import { ListApiDocsComparisonSnapshots } from '@cross-check/use-cases/list-api-docs-comparison-snapshots/ListApiDocsComparisonSnapshots.js';
 import { ListRadarNetworkComparisonSnapshots } from '@cross-check/use-cases/list-radar-network-comparison-snapshots/ListRadarNetworkComparisonSnapshots.js';
+import {
+	ecosystemEventsRouter,
+	repositoryEcosystemEventsRouter
+} from '@ecosystem-events/infrastructure/http/EcosystemEventsRouter.js';
+import { GetEcosystemEvent } from '@ecosystem-events/use-cases/get-ecosystem-event/GetEcosystemEvent.js';
+import { GetEcosystemEventProject } from '@ecosystem-events/use-cases/get-ecosystem-event-project/GetEcosystemEventProject.js';
+import { ListEcosystemEventProjects } from '@ecosystem-events/use-cases/list-ecosystem-event-projects/ListEcosystemEventProjects.js';
+import { ListEcosystemEvents } from '@ecosystem-events/use-cases/list-ecosystem-events/ListEcosystemEvents.js';
+import { ListRepositoryEcosystemEvents } from '@ecosystem-events/use-cases/list-repository-ecosystem-events/ListRepositoryEcosystemEvents.js';
 import { fbasRouter } from '@fbas/infrastructure/http/FbasRouter.js';
 import { GetFbasAnalysisProof } from '@fbas/use-cases/get-fbas-analysis-proof/GetFbasAnalysisProof.js';
 import { GetFbasAnalysis } from '@fbas/use-cases/get-fbas-analysis/GetFbasAnalysis.js';
@@ -353,6 +362,20 @@ const listen = async () => {
 			)
 		})
 	);
+
+	const ecosystemEvents = {
+		getEcosystemEvent: kernel.container.get(GetEcosystemEvent),
+		getEcosystemEventProject: kernel.container.get(GetEcosystemEventProject),
+		listEcosystemEventProjects: kernel.container.get(
+			ListEcosystemEventProjects
+		),
+		listEcosystemEvents: kernel.container.get(ListEcosystemEvents),
+		listRepositoryEcosystemEvents: kernel.container.get(
+			ListRepositoryEcosystemEvents
+		)
+	};
+	api.use('/v1/ecosystem-events', ecosystemEventsRouter(ecosystemEvents));
+	api.use('/v1/repositories', repositoryEcosystemEventsRouter(ecosystemEvents));
 
 	api.use(
 		'/v1/fbas',
